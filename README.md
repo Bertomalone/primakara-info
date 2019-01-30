@@ -1,7 +1,7 @@
 # Starter Kit for Asteroit Fullstack Web App with [Ruby on Rails](https://rubyonrails.org/)
 
 ## Features
-This is only the blueprint of every Asteroit web app
+This is only the blueprint of every Asteroit web app using Rails
 
 ## Setup Project
 1. Make sure [Ruby](https://www.ruby-lang.org) is already installed with version: `2.6.0`
