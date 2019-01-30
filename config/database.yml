@@ -86,5 +86,3 @@ test:
 production:
   <<: *default
   database: rails-starter-kit_production
-  username: rails-starter-kit
-  password: <%= ENV['RAILS-STARTER-KIT_DATABASE_PASSWORD'] %>
