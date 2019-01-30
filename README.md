@@ -4,7 +4,7 @@
 This is only the blueprint of every Asteroit web app
 
 ## Setup Project
-1. Make sure [Ruby](https://www.ruby-lang.org) is already installed with version: `2.5.1` (Will be change soon to `2.6.0`)
+1. Make sure [Ruby](https://www.ruby-lang.org) is already installed with version: `2.6.0`
 2. Also, don't forget to install Rails on Gem :
 ```sh
 $ gem install rails
