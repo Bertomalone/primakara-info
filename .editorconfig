@@ -37,6 +37,7 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 
+# 2 space indentation for styling files
 [*.{css,scss}]
 indent_style = space
 indent_size = 2
