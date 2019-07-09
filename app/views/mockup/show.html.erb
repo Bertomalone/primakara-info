@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex, nofollow, noarchive, noodp" />
+  <title>Mockup Preview</title>
+  <style type="text/css">
+    .mockup {
+      display: block;
+      height: auto;
+      margin: auto;
+      max-width: 1366px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <%= image_tag( asset_path("mockup/#{@image}.jpg"), class: "mockup" )%>
+</body>
+</html>
