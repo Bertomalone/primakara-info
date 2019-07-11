@@ -1,0 +1,27 @@
+@mixin globalContainerStyle() {
+  margin: auto;
+  position: relative;
+
+  @media only screen and (max-width: 767px) {
+    margin: 0 16px;
+    max-width: 100%;
+  }
+}
+
+.container-large {
+  max-width: 1152px;
+
+  @include globalContainerStyle();
+}
+
+.container-medium {
+  max-width: 1035px;
+
+  @include globalContainerStyle();   
+}
+
+.container-small {
+  max-width: 813px;
+
+  @include globalContainerStyle();
+}
