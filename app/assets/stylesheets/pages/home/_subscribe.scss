@@ -2,6 +2,8 @@
 	background-image: image-url("bg-bg.jpeg");
 	height: 484px;
 	opacity: .9;
+	background-size: cover;
+	background-repeat: no-repeat;
 
 	.subscribe__wrap-item{
 		display: flex;
@@ -12,10 +14,9 @@
 		.subscribe__item{
 			display: block;
 			text-align: center;
-			width: 65%;
+			width: 1000px;
 
 			.subscribe__title{
-				text-transform: capitalize;
 				color: $postUnderline;
 				font-size: 28px;
 			}

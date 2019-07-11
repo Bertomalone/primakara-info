@@ -1,0 +1,75 @@
+.ukm{
+	margin: 120px 0;
+
+	.ukm__wrap-title{
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 60px;
+
+		.ukm__title{
+			font-size: 28px;
+			text-transform: uppercase;
+			width: 500px;
+		}
+	}
+
+	.large-container{
+		width: 1170px;
+		margin: auto;
+
+		.ukm__item-wrap{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+
+			.ukm__item{
+				width: 33%;
+				box-sizing: border-box;
+				padding: 0 15px;
+				margin-bottom: 80px;
+
+				&:hover .ukm__banner-img{
+					opacity: .2;
+				}
+
+				&:hover .ukm__content{
+					background-color: #0086ad;
+				}
+
+				&:hover .ukm__content .ukm__content-title{
+					color: $postUnderline;
+				}
+
+				.ukm__banner-img{
+					background-image: image-url("workshop-photos.jpg");
+					width: 100%;
+					height: 335px;
+					background-size: cover;
+					transition: .5s opacity;
+
+					.ukm__logo-primdev{
+						background-image: image-url("logo-gradient.png");
+						height: 80px;
+						background-repeat: no-repeat;
+						transform: translateY(150%);
+					}
+				}
+
+				.ukm__content{
+					padding: 5px 0;
+					text-align: center;
+					box-shadow: 0 5px 5px #d3d3d3;
+					border-top: 0;
+					transition: .5s ease;
+
+					.ukm__content-title{
+						font-size: 20px;
+						text-transform: uppercase;
+						transition: .5s ease;
+					}
+				}
+			}
+		}
+	}
+}
