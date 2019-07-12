@@ -1,7 +1,7 @@
 .ukm{
 	margin: 120px 0;
 
-	.ukm__wrap-title{
+	.ukm__title-wrap{
 		text-align: center;
 		display: flex;
 		justify-content: center;
@@ -10,7 +10,7 @@
 		.ukm__title{
 			font-size: 28px;
 			text-transform: uppercase;
-			width: 500px;
+			width: 450px;
 		}
 	}
 
@@ -27,10 +27,9 @@
 				width: 33%;
 				box-sizing: border-box;
 				padding: 0 15px;
-				margin-bottom: 80px;
 
 				&:hover .ukm__banner-img{
-					opacity: .2;
+					opacity: .1;
 				}
 
 				&:hover .ukm__content{
@@ -47,13 +46,15 @@
 					height: 335px;
 					background-size: cover;
 					transition: .5s opacity;
+				}
 
-					.ukm__logo-primdev{
-						background-image: image-url("logo-gradient.png");
-						height: 80px;
-						background-repeat: no-repeat;
-						transform: translateY(150%);
-					}
+				.ukm__logo-primdev{
+					background-image: image-url("logo-gradient.png");
+					height: 80px;
+					background-repeat: no-repeat;
+					// transform: translateY(150%);
+					position: relative;
+    				top: -40%;
 				}
 
 				.ukm__content{
@@ -62,6 +63,8 @@
 					box-shadow: 0 5px 5px #d3d3d3;
 					border-top: 0;
 					transition: .5s ease;
+					position: relative;
+					top: -16%;
 
 					.ukm__content-title{
 						font-size: 20px;
