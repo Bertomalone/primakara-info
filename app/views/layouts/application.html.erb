@@ -4,12 +4,15 @@
     <title>Primakara Info</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= yield :head_block %>
   </head>
 
   <body>
+
+    <%= render 'client/partials/header' %>
+
     <%= yield %>
 
     <%= javascript_pack_tag 'application' %>

@@ -1,0 +1,31 @@
+.menu {
+  &__item {
+    color: $textColorSecondary;
+    font-size: 18px;
+    margin-right: 55px;
+    padding: 22px 0;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $colorPrimary;
+    }
+
+    &--with-background {
+      background: $colorPrimary;
+      border-radius: 10px;
+      color: #ffffff;
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover, &--active {
+          background: $colorPrimaryLighter;
+          color: #ffffff;
+      }
+    }
+  }
+}
