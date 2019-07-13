@@ -15,7 +15,7 @@
 		}
 	}
 
-	.large-container{
+	.medium-container{
 		width: 1055px;
 		margin: auto;
 
@@ -30,6 +30,10 @@
 
 				&:hover .ukm__banner-img{
 					opacity: .1;
+				}
+
+				&:hover .ukm__logo-primdev{
+					filter: brightness(1);
 				}
 
 				&:hover .ukm__content{
@@ -57,6 +61,8 @@
     				top: -40%;
     				transform: scale(.7);
     				background-size: contain;
+    				filter: brightness(10);
+    				transition: .5s filter;
 				}
 
 				.ukm__content{

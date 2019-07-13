@@ -18,17 +18,18 @@
 			width: 875px;
 
 			.subscribe__title{
-				color: $postUnderline;
+				color: #fff;
 				font-size: 28px;
+				line-height: 2;
 			}
 
 			.subscribe__button{
 				margin-top: 50px;
 
 				.subscribe__button-link{
-					border: 2px solid $postUnderline;
+					border: 2px solid #fff;
 					text-decoration: none;
-				    color: $postUnderline;
+				    color: #fff;
 				    font-size: 28px;
 				    text-transform: uppercase;
 				    line-height: 50px;
