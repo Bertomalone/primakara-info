@@ -5,49 +5,48 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	.banner__wrap-item{
+	&__wrap-item{
 		position: absolute;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
 
-		.banner__item{
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-
-			.banner__title{
-				text-transform: capitalize;
-				color: #fff;
-				font-size: 36px;
-				margin-bottom: 25px;
-			}
-
-			.banner__sub-title{
-				color: #fff;
-				font-size: 20px;
-				margin-top: 0;
-				line-height: 1.5;
-			}
-		}
 	}
 
-	.banner__wrap-icon{
+	&__item{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	&__title{
+		text-transform: capitalize;
+		color: #fff;
+		font-size: 36px;
+		margin-bottom: 25px;
+	}
+
+	&__sub-title{
+		color: #fff;
+		font-size: 20px;
+		margin-top: 0;
+		line-height: 1.5;
+	}
+		
+	&__wrap-icon{
 		bottom: 18px;
 		position: absolute;
 	    left: 50%;
 	    transform: translateX(-50%);
 	    bottom: 18px;
-		.banner__icon-link{
+	}
 		
-			.banner__icon{
-				background-image: image-url("icons/downwards-pointer.svg");
-				width: 50px;
-				height: 50px;
-				background-size: cover;
-				transform: scale(0.9, 0.5);
-				cursor: pointer;
-			}
-		}
+	&__icon{
+		background-image: image-url("icons/downwards-pointer.svg");
+		width: 50px;
+		height: 50px;
+		background-size: cover;
+		transform: scale(0.9, 0.5);
+		cursor: pointer;
 	}
 }
