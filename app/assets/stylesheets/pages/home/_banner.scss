@@ -1,7 +1,7 @@
 .banner{
-	background-image: image-url("bege.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("bege.jpeg");
 	height: 605px;
-	opacity: .9;
+	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -18,14 +18,16 @@
 
 			.banner__title{
 				text-transform: capitalize;
-				color: $postUnderline;
-				font-size: 42px;
+				color: #fff;
+				font-size: 36px;
+				margin-bottom: 25px;
 			}
 
 			.banner__description{
-				color: $postUnderline;
-				font-size: 22px;
+				color: #fff;
+				font-size: 20px;
 				margin-top: 0;
+				line-height: 1.5;
 			}
 		}
 	}
@@ -39,6 +41,7 @@
 			width: 50px;
 			height: 50px;
 			background-size: cover;
+			transform: scale(1, 0.7);
 		}
 	}
 }

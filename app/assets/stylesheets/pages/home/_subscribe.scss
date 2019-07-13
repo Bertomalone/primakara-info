@@ -1,9 +1,10 @@
 .subscribe{
-	background-image: image-url("bg-bg.jpeg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("bg-bg.jpeg");
 	height: 484px;
-	opacity: .9;
+	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
+	margin: 30px 0;
 
 	.subscribe__wrap-item{
 		display: flex;
@@ -14,7 +15,7 @@
 		.subscribe__item{
 			display: block;
 			text-align: center;
-			width: 1000px;
+			width: 875px;
 
 			.subscribe__title{
 				color: $postUnderline;
