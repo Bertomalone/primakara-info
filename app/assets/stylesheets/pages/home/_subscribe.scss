@@ -1,44 +1,48 @@
 .subscribe{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("bg-bg.jpeg");
-	height: 484px;
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin: 30px 0;
+	margin-top: 92px;
 
-	.subscribe__wrap-item{
+	&__wrap-item{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		height: 100%;
+	}
 
-		.subscribe__item{
-			display: block;
-			text-align: center;
-			width: 875px;
+	&__item{
+		display: block;
+		text-align: center;
+		width: 875px;
+		padding: 134px 0;
+	}
 
-			.subscribe__title{
-				color: #fff;
-				font-size: 28px;
-				line-height: 2;
-			}
+	&__title{
+		color: #fff;
+		font-size: 28px;
+		line-height: 2;
+	}
 
-			.subscribe__button{
-				margin-top: 50px;
+	&__button{
+		margin-top: 50px;
+	}
 
-				.subscribe__button-link{
-					border: 2px solid #fff;
-					text-decoration: none;
-				    color: #fff;
-				    font-size: 28px;
-				    text-transform: uppercase;
-				    line-height: 50px;
-				    transition: all .5s ease-in-out;
-				    padding: 15px 25px;
-				    border-radius: 20px;
-				}
-			}
+	&__button-link{
+		border: 2px solid #fff;
+		text-decoration: none;
+	    color: #fff;
+	    font-size: 28px;
+	    text-transform: uppercase;
+	    line-height: 50px;
+	    transition: all .3s ease-in-out;
+	    padding: 15px 25px;
+	    border-radius: 20px;
 
-		}
+	    &:hover {
+	    	background-color: #fff;
+	    	color: #484848;
+	    }
 	}
 }
