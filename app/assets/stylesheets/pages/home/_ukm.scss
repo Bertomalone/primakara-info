@@ -33,7 +33,7 @@
 				}
 
 				&:hover .ukm__logo-primdev{
-					filter: brightness(1);
+					filter: brightness(1) invert(0);
 				}
 
 				&:hover .ukm__content{
@@ -56,12 +56,11 @@
 					background-image: image-url("logo-gradient.png");
 					height: 80px;
 					background-repeat: no-repeat;
-					// transform: translateY(150%);
 					position: relative;
     				top: -40%;
     				transform: scale(.7);
     				background-size: contain;
-    				filter: brightness(10);
+    				filter: brightness(0) invert(1);
     				transition: .5s filter;
 				}
 
