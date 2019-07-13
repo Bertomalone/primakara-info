@@ -1,15 +1,15 @@
 .banner{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("bege.jpeg");
-	height: 615px;
+	height: 100vh;
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 
 	.banner__wrap-item{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 90%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
 
 		.banner__item{
 			display: flex;
@@ -23,7 +23,7 @@
 				margin-bottom: 25px;
 			}
 
-			.banner__description{
+			.banner__sub-title{
 				color: #fff;
 				font-size: 20px;
 				margin-top: 0;
@@ -33,15 +33,21 @@
 	}
 
 	.banner__wrap-icon{
-		display: flex;
-		justify-content: center;
+		bottom: 18px;
+		position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    bottom: 18px;
+		.banner__icon-link{
 		
-		.banner__icon{
-			background-image: image-url("icons/downwards-pointer.svg");
-			width: 50px;
-			height: 50px;
-			background-size: cover;
-			transform: scale(1, 0.7);
+			.banner__icon{
+				background-image: image-url("icons/downwards-pointer.svg");
+				width: 50px;
+				height: 50px;
+				background-size: cover;
+				transform: scale(0.9, 0.5);
+				cursor: pointer;
+			}
 		}
 	}
 }
