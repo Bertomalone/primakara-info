@@ -47,6 +47,7 @@
 
 		&:hover .ukm__link .ukm__logo-primdev{
 			filter: brightness(1) invert(0);
+			transform: translate(-50%, -50%) scale(1.3);
 		}
 
 		&:hover .ukm__content{
@@ -85,7 +86,7 @@
 		transform: translate(-50%, -50%);
 		background-size: contain;
 		filter: brightness(0) invert(1);
-		transition: .3s filter;
+		transition: all .3s ease-in-out;
 	}
 
 	&__content{
