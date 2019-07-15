@@ -11,6 +11,10 @@
 .container-large {
   max-width: 1152px;
 
+  @media only screen and (max-width: 1170px) {
+    max-width: 900px;
+  }
+
   @include globalContainerStyle();
 }
 
