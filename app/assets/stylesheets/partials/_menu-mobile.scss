@@ -1,0 +1,41 @@
+.menu-mobile {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 50%;
+  top: 12px;
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s ease-in-out;
+  width: 96%;
+  z-index: 99;
+
+  &--active {
+    transform: translateX(-50%) scaleY(1);
+  }
+
+  .menu {
+    display: block;
+    margin-top: 48px;
+    padding-bottom: 12px;
+
+    &__item {
+      color: $textColorSecondary;
+      display: block;
+      padding: 12px 24px;
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+
+      &--with-background {
+        background-color: transparent;
+        border-radius: 0;
+      }
+
+      &:hover {
+        background-color: $colorPrimary;
+        color: #fff;
+      }
+    }
+  }
+}
