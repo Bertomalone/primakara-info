@@ -1,9 +1,7 @@
 .banner{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("bege.jpeg");
 	height: 100vh;
-	width: 100%;
 	background-size: cover;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 
@@ -16,8 +14,6 @@
 	}
 
 	&__item{
-		display: flex;
-		flex-direction: column;
 		text-align: center;
 	}
 
@@ -38,7 +34,6 @@
 	}
 		
 	&__wrap-icon{
-		bottom: 18px;
 		position: absolute;
 	    left: 50%;
 	    transform: translateX(-50%);
