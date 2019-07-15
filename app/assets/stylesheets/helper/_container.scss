@@ -25,6 +25,14 @@
 .container-medium {
   max-width: 1035px;
 
+  @media only screen and (max-width: 1050px) {
+    max-width: 785px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    max-width: 698px;
+  }
+
   @include globalContainerStyle();   
 }
 
