@@ -1,0 +1,9 @@
+<header class="header <%= @header_extra_class %>">
+  <div class="container-large header__container">
+    <%= link_to '/', class: 'header__logo' do %>
+      <%= image_tag 'primdev-logo.svg' %>
+    <% end %>
+    <%= render 'client/partials/menu' %>
+    <a href="javascript:void(0)" class="header__menu-mobile-btn">Menu</a>
+  </div>
+</header>
