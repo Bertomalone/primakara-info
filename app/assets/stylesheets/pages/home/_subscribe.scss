@@ -1,24 +1,14 @@
 .subscribe{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("bg-bg.jpeg");
-	width: 100%;
 	background-size: cover;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	margin-top: 92px;
 
-	&__wrap-item{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-	}
-
 	&__item{
 		display: block;
 		text-align: center;
-		width: 875px;
-		padding: 134px 0;
+		padding: 136px 0;
 	}
 
 	&__title{
@@ -39,9 +29,8 @@
 	    color: #fff;
 	    font-size: 30px;
 	    text-transform: uppercase;
-	    line-height: 1;
 	    transition: all .3s ease-in-out;
-	    padding: 13px 25px;
+	    padding: 11px 25px;
 	    border-radius: 15px;
 		display: inline-block;
 
