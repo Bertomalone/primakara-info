@@ -3,7 +3,7 @@
 	height: calc(100vh - 65px);
 	background-size: cover;
 	background-attachment: fixed;
-  background-position: center;
+ 	 background-position: center;
   
   &__container {
     height: 100%;
@@ -14,16 +14,13 @@
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
-<<<<<<< HEAD
+		width: 100%;
 
 		@media only screen and (max-width: 611px){
 			left: 0;
 			transform: translateY(-50%);
 		}
 
-=======
-    width: 100%;
->>>>>>> 7bcd08a94697b7e2809ad531e0d64d166f8edad3
 	}
 
 	&__item{
