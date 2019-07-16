@@ -1,21 +1,29 @@
 .banner{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("bege.jpeg");
-	height: 100vh;
+	height: calc(100vh - 65px);
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: center;
+  background-position: center;
+  
+  &__container {
+    height: 100%;
+  }
 
 	&__wrap-item{
 		position: absolute;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
+<<<<<<< HEAD
 
 		@media only screen and (max-width: 611px){
 			left: 0;
 			transform: translateY(-50%);
 		}
 
+=======
+    width: 100%;
+>>>>>>> 7bcd08a94697b7e2809ad531e0d64d166f8edad3
 	}
 
 	&__item{
