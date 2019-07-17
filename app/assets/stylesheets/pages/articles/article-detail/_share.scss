@@ -2,54 +2,73 @@
 	margin-top: 42px;
 
 	&__txt{
-		color: #969696;
+		color: $textColorSecondary;
 		text-transform: capitalize;
 	}
 
 	&__sosmed-wrapper{
 		display: inline-block;
+	}
 
-		.share__sosmed-link{
-			display: inline-block;
-			background-color: $colorPrimary;
-			padding: 4px;
-			border-radius: 8px;
-			margin: 3px 10px 0 0;
+	&__sosmed-link{
+		display: inline-block;
+		background-color: $colorPrimary;
+		padding: 4px;
+		border-radius: 8px;
+		margin: 3px 10px 0 0;
+		transition: all .3s ease-in-out;
+	}
+
+	&__sosmed-icons{
+		&--facebook{
+			background-image: image-url("icons/facebook.svg");
+			height: 35px;
+			width: 35px;
+			background-size: contain;
+			transform: scale(.9);
 			transition: all .3s ease-in-out;
 
 			&:hover{
-				opacity: .8;
+				transform: scale(1);
 			}
+		}
 
-			.share__sosmed-icons{
-				background-repeat: no-repeat;
-				&--facebook{
-					background-image: image-url("icons/facebook.svg");
-					height: 35px;
-					width: 35px;
-					background-size: contain;
-				}
+		&--whatsapp{
+			background-image: image-url("icons/whatsapp.svg");
+			height: 35px;
+			width: 35px;
+			background-size: contain;
+			transform: scale(.9);
+			transition: all .3s ease-in-out;
 
-				&--whatsapp{
-					background-image: image-url("icons/whatsapp.svg");
-					height: 35px;
-					width: 35px;
-					background-size: contain;
-				}
+			&:hover{
+				transform: scale(1);
+			}
+		}
 
-				&--line{
-					background-image: image-url("icons/line.svg");
-					height: 35px;
-					width: 35px;
-					background-size: contain;
-				}
+		&--line{
+			background-image: image-url("icons/line.svg");
+			height: 35px;
+			width: 35px;
+			background-size: contain;
+			transform: scale(.9);
+			transition: all .3s ease-in-out;
 
-				&--copy{
-					background-image: image-url("icons/copy.svg");
-					height: 35px;
-					width: 35px;
-					background-size: contain;
-				}
+			&:hover{
+				transform: scale(1);
+			}
+		}
+
+		&--copy{
+			background-image: image-url("icons/copy.svg");
+			height: 35px;
+			width: 35px;
+			background-size: contain;
+			transform: scale(.9);
+			transition: all .3s ease-in-out;
+
+			&:hover{
+				transform: scale(1);
 			}
 		}
 	}
@@ -60,20 +79,20 @@
 		top: 50%;
 		transform: translateY(50%);
 		margin-left: 6px;
+	}
 
-		.share__subscribe-link{
-			padding: 10px 37px;
-			border: 2.4px solid $colorPrimary;
-			border-radius: 8px;
-			text-transform: capitalize;
-			text-decoration: none;
-			color: $colorPrimary;
-			transition: all .3s ease-in-out;
+	&__subscribe-link{
+		padding: 10px 37px;
+		border: 2.4px solid $colorPrimary;
+		border-radius: 8px;
+		text-transform: capitalize;
+		text-decoration: none;
+		color: $colorPrimary;
+		transition: all .3s ease-in-out;
 
-			&:hover{
-				background-color: $colorPrimary;
-				color: #fff;
-			}
+		&:hover{
+			background-color: $colorPrimary;
+			color: #fff;
 		}
 	}
 }
