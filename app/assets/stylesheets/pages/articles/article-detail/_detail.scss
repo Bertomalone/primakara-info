@@ -1,0 +1,39 @@
+.detail{
+	margin-top: 37px;
+
+	&__wrapper{
+		width: 70%;
+	}
+
+	&__title{
+		font-size: 32px;
+		line-height: 1.5;
+	}
+
+	&__author{
+		line-height: .8;
+		color: #969696;
+
+		.detail__author-name{
+			color: $colorPrimary;
+		}
+	}
+
+	&__img{
+		background-image: image-url("bg.jpg");
+		background-size: cover;
+		height: 406px;
+		background-position: center;
+	}
+
+	&__description{
+		margin-top: 30px;
+		color: #000;
+		line-height: 1.6;
+		letter-spacing: .3px;
+
+		&:first-child{
+			margin-top: 34px;
+		}
+	}
+}
