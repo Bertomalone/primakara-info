@@ -8,6 +8,10 @@
 
 	&__sosmed-wrapper{
 		display: inline-block;
+
+		@media only screen and (max-width: 375px){
+			display: block;
+		}
 	}
 
 	&__sosmed-link{
@@ -17,6 +21,10 @@
 		border-radius: 8px;
 		margin: 3px 10px 0 0;
 		transition: all .3s ease-in-out;
+
+		@media only screen and (max-width: 440px){
+			margin: 3px 5px 0 0;
+		}
 	}
 
 	&__sosmed-icons{
@@ -31,6 +39,11 @@
 			&:hover{
 				transform: scale(1);
 			}
+
+			@media only screen and (max-width: 440px){
+				height: 30px;
+				width: 30px;
+			}
 		}
 
 		&--whatsapp{
@@ -43,6 +56,11 @@
 
 			&:hover{
 				transform: scale(1);
+			}
+
+			@media only screen and (max-width: 440px){
+				height: 30px;
+				width: 30px;
 			}
 		}
 
@@ -57,6 +75,11 @@
 			&:hover{
 				transform: scale(1);
 			}
+
+			@media only screen and (max-width: 440px){
+				height: 30px;
+				width: 30px;
+			}
 		}
 
 		&--copy{
@@ -70,19 +93,32 @@
 			&:hover{
 				transform: scale(1);
 			}
+
+			@media only screen and (max-width: 440px){
+				height: 30px;
+				width: 30px;
+			}
 		}
 	}
 
 	&__subscribe-btn{
 		display: inline-block;
 		position: absolute;
-		top: 50%;
-		transform: translateY(50%);
+		bottom: 13px;
 		margin-left: 6px;
+
+		@media only screen and (max-width: 375px){
+			display: block;
+			position: relative;
+			margin-top: 20px;
+			margin-left: 5%;
+			bottom: 0;
+		}
 	}
 
 	&__subscribe-link{
-		padding: 10px 37px;
+		font-size: 20px;
+		padding: 9px 31px;
 		border: 2.4px solid $colorPrimary;
 		border-radius: 8px;
 		text-transform: capitalize;
@@ -93,6 +129,10 @@
 		&:hover{
 			background-color: $colorPrimary;
 			color: #fff;
+		}
+
+		@media only screen and (max-width: 440px){
+			font-size: 16px;
 		}
 	}
 }
