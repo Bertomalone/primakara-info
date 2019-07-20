@@ -4,13 +4,20 @@
     <title>Primakara Info</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= yield :head_block %>
   </head>
 
   <body>
-    <%= yield %>
+
+    <%= render 'client/partials/header' %>
+    <%= render 'client/partials/menu-mobile' %>
+
+    <main>
+      <%= yield %>    
+    </main>
 
     <%= javascript_pack_tag 'application' %>
     <%= yield :script %>

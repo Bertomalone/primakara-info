@@ -11,11 +11,27 @@
 .container-large {
   max-width: 1152px;
 
+  @media only screen and (max-width: 1170px) {
+    max-width: 900px;
+  }
+
+  @media only screen and (max-width: 920px) {
+    max-width: 748px;
+  }
+
   @include globalContainerStyle();
 }
 
 .container-medium {
   max-width: 1035px;
+
+  @media only screen and (max-width: 1050px) {
+    max-width: 785px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    max-width: 698px;
+  }
 
   @include globalContainerStyle();   
 }

@@ -1,0 +1,42 @@
+.subscribe{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), image-url("bg-bg.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	margin-top: 92px;
+
+	&__item{
+		display: block;
+		text-align: center;
+		padding: 136px 0;
+	}
+
+	&__title{
+		color: #fff;
+		font-size: 30px;
+		line-height: 2;
+		font-weight: normal;
+		margin: 0;
+	}
+
+	&__button{
+		margin-top: 40px;
+	}
+
+	&__button-link{
+		border: 2.5px solid #fff;
+		text-decoration: none;
+	    color: #fff;
+	    font-size: 30px;
+	    text-transform: uppercase;
+	    transition: all .3s ease-in-out;
+	    padding: 11px 25px;
+	    border-radius: 15px;
+		display: inline-block;
+
+	    &:hover {
+	    	background-color: #fff;
+	    	color: #484848;
+	    }
+	}
+}
