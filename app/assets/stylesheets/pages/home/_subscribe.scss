@@ -15,8 +15,16 @@
 		color: #fff;
 		font-size: 30px;
 		line-height: 2;
-		font-weight: normal;
+		font-weight: 400;
 		margin: 0;
+
+		@media only screen and (max-width: 768px){
+			font-size: 22px;
+		}
+
+		@media only screen and (max-width: 480px){
+			font-size: 18px;
+		}
 	}
 
 	&__button{
@@ -38,5 +46,13 @@
 	    	background-color: #fff;
 	    	color: #484848;
 	    }
+
+		@media only screen and (max-width: 768px){
+			font-size: 22px;
+		}
+
+		@media only screen and (max-width: 480px){
+			font-size: 18px;
+		}
 	}
 }
