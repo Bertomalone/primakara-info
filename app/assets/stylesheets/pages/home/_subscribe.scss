@@ -15,18 +15,14 @@
 		color: #fff;
 		font-size: 30px;
 		line-height: 2;
-		font-weight: normal;
+		font-weight: 400;
 		margin: 0;
-
-		@media only screen and (max-width: 900px){
-			font-size: 26px;
-		}
 
 		@media only screen and (max-width: 768px){
 			font-size: 22px;
 		}
 
-		@media only screen and (max-width: 580px){
+		@media only screen and (max-width: 480px){
 			font-size: 18px;
 		}
 	}
@@ -51,15 +47,11 @@
 	    	color: #484848;
 	    }
 
-	    @media only screen and (max-width: 900px){
-			font-size: 26px;
-		}
-
 		@media only screen and (max-width: 768px){
 			font-size: 22px;
 		}
 
-		@media only screen and (max-width: 580px){
+		@media only screen and (max-width: 480px){
 			font-size: 18px;
 		}
 	}
