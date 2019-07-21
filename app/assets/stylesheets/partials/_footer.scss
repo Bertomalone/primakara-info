@@ -1,0 +1,158 @@
+.footer{
+  &__border{
+    border: 3px solid #109d59;
+  }
+
+  &__container{
+    max-width: 1150px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 16px 0;
+    position: relative;
+    overflow: hidden;
+
+    &__logo{
+      width: 33.33%;
+      float: left;
+
+      &__first{
+        height: 55px;
+        margin-bottom: 25px;
+      }
+      &__second{
+        height: 50px;
+        margin-bottom: 50px;
+      }
+    }
+
+    &__information{
+      width: 33.33%;
+      float: left;
+
+      &__title{
+        font-size: 22px;
+        color: #109d59;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      &__list a{
+        font-size: 18px;
+        color: #109d59;
+        line-height: 35px;
+        transition: all ease-in-out .3s;
+        text-decoration: none;
+      }
+
+      &__list a:hover{
+        color: #696969;
+      }
+    }
+
+    &__about{
+      width: 33.33%;
+      float: left;
+
+      &__detail{
+        color: #696969;
+        line-height: 27px;
+
+        &__title{
+          font-size: 22px;
+          color: #109d59;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    @media screen and (min-width: 520px) and (max-width: 800px){
+      &__logo{
+        width: 67%;
+        &__second{
+          display: block;
+        }
+        &__first{
+          display: block;
+        }
+      }
+      &__information{
+        width: 33%;
+        float: right;
+        text-align: left;
+      }
+      &__about{
+        width: 100%;
+
+        &__detail{
+          text-align: center;
+
+          &__list{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 519px){
+      &__logo{
+        width: 100%;
+        &__second{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        &__first{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      &__information{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 45px;
+      }
+      &__about{
+        width: 100%;
+        text-align: center;
+        &__detail{
+
+          &__list{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1170px){
+    &__container{
+      padding: 16px;
+    }
+  }
+}
+
+.footer-bottom{
+  &__container{
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+
+    &__copyright{
+      text-align: center;
+      padding: 1%;
+      background: #109d59;
+      color: white;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 519px){
+    &__container__copyright{
+      padding: 2%;
+      font-size: 11px;
+    }
+  }
+}

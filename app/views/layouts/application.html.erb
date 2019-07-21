@@ -18,7 +18,9 @@
     <main>
       <%= yield %>    
     </main>
-
+    
+    <%= render 'client/partials/footer' %>
+    
     <%= javascript_pack_tag 'application' %>
     <%= yield :script %>
   </body>
