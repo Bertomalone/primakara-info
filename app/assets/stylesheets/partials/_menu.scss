@@ -31,5 +31,9 @@
           color: #ffffff;
       }
     }
+
+    &--active {
+      color: $colorPrimary;
+    }
   }
 }
