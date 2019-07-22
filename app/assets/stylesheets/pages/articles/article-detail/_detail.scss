@@ -80,14 +80,7 @@
 		line-height: 1.6;
 		letter-spacing: .2px;
 
-		@include excerpt(
-            $font-size: 18px,
-            $line-height: 1.3,
-            $lines-to-show: 6,
-            $excerpt-bg: transparent
-        );
-
-		.detail__description-important{
+		.detail__description--colored{
 			color: $colorPrimary;
 		}
 
