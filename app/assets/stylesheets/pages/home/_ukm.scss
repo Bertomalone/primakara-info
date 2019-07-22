@@ -1,5 +1,6 @@
 .ukm{
 	margin-top: 76px;
+	margin-bottom: 90px;
 
 	&__title{
 		font-size: 24px;
@@ -13,18 +14,11 @@
 
 	   	@media only screen and (max-width: 480px){
 	   		width: 100%;
-	   	}
-
-	   	@media only screen and (max-width: 414px){
-	   		font-size: 20px;
+	   		font-size: 22px;
 	   	}
 
 	   	@media only screen and (max-width: 360px){
 	   		font-size: 18px;
-	   	}
-
-	   	@media only screen and (max-width: 320px){
-	   		font-size: 16px;
 	   	}
 	}
 
@@ -140,6 +134,14 @@
 		background-repeat: no-repeat;
 		filter: brightness(0) invert(1);
 		transition: all .3s ease-in-out;
+
+		@media only screen and (max-width: 480px){
+			width: 245px;
+		}
+
+		@media only screen and (max-width: 375px){
+			width: 200px;
+		}
 	}
 
 	&__content{
