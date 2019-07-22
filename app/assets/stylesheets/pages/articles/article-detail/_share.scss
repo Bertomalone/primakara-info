@@ -8,7 +8,6 @@
 
 	&__sosmed-wrapper{
 		display: inline-block;
-		margin: 3px 10px 0 0;
 
 		@media only screen and (max-width: 440px){
 			margin: 3px 5px 0 0;
@@ -23,23 +22,12 @@
 		display: inline-block;
 		background-color: $colorPrimary;
 		padding: 4px;
+		margin-right: 12px;
 		border-radius: 8px;
 		transition: all .3s ease-in-out;
 
-		&:hover .share__sosmed-icons--facebook{
-			transform: scale(1);
-		}
-
-		&:hover .share__sosmed-icons--whatsapp{
-			transform: scale(1);
-		}
-
-		&:hover .share__sosmed-icons--line{
-			transform: scale(1);
-		}
-
-		&:hover .share__sosmed-icons--copy{
-			transform: scale(1);
+		&:hover {
+			background-color: #1cb66c;
 		}
 	}
 
@@ -105,8 +93,7 @@
 	&__subscribe-btn{
 		display: inline-block;
 		position: absolute;
-		bottom: 13px;
-		margin-left: 6px;
+		margin-left: 4px;
 
 		@media only screen and (max-width: 375px){
 			display: block;
@@ -126,6 +113,7 @@
 		text-decoration: none;
 		color: $colorPrimary;
 		transition: all .3s ease-in-out;
+		display: inline-block;
 
 		&:hover{
 			background-color: $colorPrimary;
