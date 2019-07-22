@@ -18,11 +18,19 @@
 		font-weight: 400;
 		margin: 0;
 
+		@media only screen and (min-width: 768px) and (max-width: 814px){
+			padding: 0 16px;
+		}
+
 		@media only screen and (max-width: 768px){
-			font-size: 22px;
+			font-size: 26px;
 		}
 
 		@media only screen and (max-width: 480px){
+			font-size: 22px;
+		}
+
+		@media only screen and (max-width: 360px){
 			font-size: 18px;
 		}
 	}
@@ -48,10 +56,14 @@
 	    }
 
 		@media only screen and (max-width: 768px){
-			font-size: 22px;
+			font-size: 26px;
 		}
 
 		@media only screen and (max-width: 480px){
+			font-size: 22px;
+		}
+
+		@media only screen and (max-width: 360px){
 			font-size: 18px;
 		}
 	}
