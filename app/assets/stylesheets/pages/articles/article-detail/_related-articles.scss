@@ -1,6 +1,7 @@
 .related-articles{
 	background-color: #f8f8f8;
 	margin-top: 53px;
+	margin-bottom: 50px;
 	padding-top: 33px;
 	padding-bottom: 18px;
 
@@ -26,7 +27,11 @@
 		}
 
 		&:hover .related-articles__banner-img{
-			opacity: .8;
+			transform: scale(1.1);
+		}
+
+		&:hover .related-articles__title{
+			color: $colorPrimary;
 		}
 
 		@media only screen and (max-width: 920px){
@@ -53,19 +58,28 @@
 		}
 	}
 
+	&__img-parents{
+		width: 100%;
+		height: 180px;
+		border-radius: 12px;
+		overflow: hidden;
+	}
+
 	&__banner-img{
 		background-image: image-url("bg.jpg");
 		background-size: cover;
 		background-position: center;
-		height: 179px;
-		border-radius: 15px;
+		height: 100%;
+		width: 100%;
 		transition: all .3s ease-in-out;
 	}
 
 	&__title{
 		margin: 8px 0 0;
 	    font-size: 16px;
+	    color: $default-color;
 	    line-height: 1.3;
+	    transition: all .3s ease-in-out;
 
 	    @media only screen and (max-width: 751px){
 	    	font-size: 14px;
