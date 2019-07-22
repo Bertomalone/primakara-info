@@ -1,0 +1,138 @@
+.category {
+  background: $colorPrimary;
+  padding: 18px 0;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__category-container {
+    width: 86%;
+
+    &--collapse {
+      position: absolute;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    a {
+      color: #fff;
+      font-size: 18px;
+      margin-right: 22px;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $colorPrimaryLighter;
+      }
+    }
+
+    &::after {
+      color: #fff;
+      content: "|";
+      margin-right: 22px;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__collapse-button {
+    display: flex;
+    text-decoration: none;
+  }
+
+  &__collapse-icon {
+    border-radius: 3px;
+    height: 18px;
+    position: relative;
+    width: 18px;
+
+    div {
+      background-color: #fff;
+      height: 3px;
+      position: absolute;
+      transition: all .3s ease-in-out;
+      width: 100%;
+    }
+
+    &--first {
+      top: 0;
+      transform-origin: 0 0;
+    }
+
+    &--second {
+      top: 50%;
+      transform: translateY(-50%);
+      transform-origin: 0 50%;
+    }
+
+    &--third {
+      bottom: 0;
+      transform-origin: 0 100%;
+    }
+
+    &--active &--first {
+      transform: rotate(45deg) scaleX(1.25);
+    }
+
+    &--active &--second {
+      display: none;
+    }
+
+    &--active &--third {
+      transform: rotate(-45deg) scaleX(1.25);
+    }
+  }
+
+  &__collapse-button-text {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  &__search {
+    width: 14%;
+  }
+
+  &__search-container {
+    position: relative;
+
+    &::after {
+      background-image: image-url('icons/search.svg');
+      background-position: center;
+      background-size: cover;
+      content: "";
+      display: block;
+      height: 18px;
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+    }
+  }
+
+  &__search-input {
+    border: none;
+    border-radius: 8px;
+    color: $textColorSecondary;
+    font-size: 14px;
+    padding: 5px 32px 5px 8px;
+    outline: none;
+    width: 100%;
+  }
+}
