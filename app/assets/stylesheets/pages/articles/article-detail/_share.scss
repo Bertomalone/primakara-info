@@ -1,0 +1,139 @@
+.share{
+	margin-top: 42px;
+
+	&__txt{
+		color: $textColorSecondary;
+		text-transform: capitalize;
+	}
+
+	&__sosmed-wrapper{
+		display: inline-block;
+		margin: 3px 10px 0 0;
+
+		@media only screen and (max-width: 440px){
+			margin: 3px 5px 0 0;
+		}
+
+		@media only screen and (max-width: 375px){
+			display: block;
+		}
+	}
+
+	&__sosmed-link{
+		display: inline-block;
+		background-color: $colorPrimary;
+		padding: 4px;
+		border-radius: 8px;
+		transition: all .3s ease-in-out;
+
+		&:hover .share__sosmed-icons--facebook{
+			transform: scale(1);
+		}
+
+		&:hover .share__sosmed-icons--whatsapp{
+			transform: scale(1);
+		}
+
+		&:hover .share__sosmed-icons--line{
+			transform: scale(1);
+		}
+
+		&:hover .share__sosmed-icons--copy{
+			transform: scale(1);
+		}
+	}
+
+	&__sosmed-icons{
+
+		&--facebook{
+			background-image: image-url("icons/facebook.svg");
+			height: 35px;
+			width: 35px;
+			background-size: contain;
+			transform: scale(.9);
+			transition: all .3s ease-in-out;
+
+			@media only screen and (max-width: 440px){
+				height: 30px;
+				width: 30px;
+			}
+		}
+
+		&--whatsapp{
+			background-image: image-url("icons/whatsapp.svg");
+			height: 35px;
+			width: 35px;
+			background-size: contain;
+			transform: scale(.9);
+			transition: all .3s ease-in-out;
+
+			@media only screen and (max-width: 440px){
+				height: 30px;
+				width: 30px;
+			}
+		}
+
+		&--line{
+			background-image: image-url("icons/line.svg");
+			height: 35px;
+			width: 35px;
+			background-size: contain;
+			transform: scale(.9);
+			transition: all .3s ease-in-out;
+
+			@media only screen and (max-width: 440px){
+				height: 30px;
+				width: 30px;
+			}
+		}
+
+		&--copy{
+			background-image: image-url("icons/copy.svg");
+			height: 35px;
+			width: 35px;
+			background-size: contain;
+			transform: scale(.9);
+			transition: all .3s ease-in-out;
+
+			@media only screen and (max-width: 440px){
+				height: 30px;
+				width: 30px;
+			}
+		}
+	}
+
+	&__subscribe-btn{
+		display: inline-block;
+		position: absolute;
+		bottom: 13px;
+		margin-left: 6px;
+
+		@media only screen and (max-width: 375px){
+			display: block;
+			position: relative;
+			margin-top: 20px;
+			margin-left: 5%;
+			bottom: 0;
+		}
+	}
+
+	&__subscribe-link{
+		font-size: 20px;
+		padding: 9px 31px;
+		border: 2.4px solid $colorPrimary;
+		border-radius: 8px;
+		text-transform: capitalize;
+		text-decoration: none;
+		color: $colorPrimary;
+		transition: all .3s ease-in-out;
+
+		&:hover{
+			background-color: $colorPrimary;
+			color: #fff;
+		}
+
+		@media only screen and (max-width: 440px){
+			font-size: 16px;
+		}
+	}
+}
