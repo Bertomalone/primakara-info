@@ -50,6 +50,14 @@
     }
   }
 
+  &__collapse-button-container {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
   &__collapse-button {
     display: flex;
     text-decoration: none;

@@ -14,9 +14,13 @@ const categoryCollapseHandler = () => {
 export default () => {
   const category = document.querySelector(".category__category-container");
   const categoryList = document.querySelector(".category__list");
+  const collapseButton = document.querySelector(
+    ".category__collapse-button-container"
+  );
 
-  if (category < categoryList) {
+  if (category.offsetWidth < categoryList.offsetWidth) {
     category.classList.add("category__category-container--collapse");
+    collapseButton.classList.add("category__collapse-button-container--active");
     categoryCollapseHandler();
   }
 };
