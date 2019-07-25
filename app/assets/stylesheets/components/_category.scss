@@ -1,33 +1,92 @@
 .category {
   background: $colorPrimary;
   padding: 12px 0;
+  position: relative;
 
   &__container {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    position: static !important;
   }
 
   &__category-container {
     width: 86%;
 
     &--collapse {
+      background-color: $colorSecondary;
+      left: 0;
       position: absolute;
+      top: 48px;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+      z-index: 2;
+
+      &--active {
+        transform: scaleY(1);
+      }
+
+      & .category__list {
+        display: block;
+        margin: auto;
+        max-width: 1152px;
+        padding-bottom: 24px;
+
+        @media only screen and (max-width: 1170px) {
+          max-width: 900px;
+        }
+      
+        @media only screen and (max-width: 920px) {
+          max-width: 748px;
+        }
+      
+        @media only screen and (max-width: 767px) {
+          margin: 0 16px;
+          max-width: 100%;
+        }
+      }
+
+      & .category__item {
+        margin-top: 24px;
+        width: 19.5%;
+
+        @media only screen and (max-width: 767px) {
+          width: 32.5%;
+        }
+
+        @media only screen and (max-width: 480px) {
+          width: 49.5%;
+        }
+
+        &::after {
+          content: none;
+        } 
+
+        a {
+          @media only screen and (max-width: 640px) {
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
 
   &__list {
-    display: flex;
+    display: inline-block;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
   &__item {
+    display: inline-block;
+
     a {
       color: #fff;
       font-size: 18px;
-      margin-right: 22px;
+      margin-right: 20px;
       text-decoration: none;
       text-transform: capitalize;
       transition: color 0.3s ease-in-out;
@@ -40,7 +99,7 @@
     &::after {
       color: #fff;
       content: "|";
-      margin-right: 22px;
+      margin-right: 16px;
     }
 
     &:last-child {

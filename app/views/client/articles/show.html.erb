@@ -1,5 +1,9 @@
-<%= render 'client/articles/article_detail/breadcrumbs' %>
 <%= render 'client/articles/article-detail/article-detail-category' %>
+<%= render 'client/articles/article_detail/breadcrumbs' %>
 <%= render 'client/articles/article-detail/detail' %>
 <%= render 'client/articles/article-detail/share' %>
 <%= render 'client/articles/article-detail/related-articles' %>
+
+<%= content_for :script do %>
+  <%= javascript_pack_tag 'article-detail', defer: true %>
+<% end %>

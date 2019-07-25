@@ -3,3 +3,7 @@
 <%= render 'client/home/information' %>
 <%= render 'client/home/subscribe' %>
 <%= render 'client/home/ukm' %>
+
+<%= content_for :script do %>
+  <%= javascript_pack_tag 'home', defer: true %>
+<% end %>

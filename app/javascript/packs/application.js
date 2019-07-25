@@ -13,4 +13,3 @@ import mobileMenu from "../modules/mobileMenu";
 import buttonScroll from "../modules/buttonScroll";
 
 mobileMenu();
-buttonScroll();
