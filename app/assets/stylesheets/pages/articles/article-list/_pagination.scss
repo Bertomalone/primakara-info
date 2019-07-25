@@ -41,10 +41,28 @@
 
 	&__list-hidden{
 		display: inline-block;
-		letter-spacing: 2.5px;
-    	position: absolute;
-    	top: 50%;
-    	transform: translateY(-75%);
+		height: 31.5px;
+		line-height: 20px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 2px 7px;
+		border-radius: 8px;
+		transition: all .3s ease-in-out;
+
+    	&:hover {
+			background-color: $colorPrimary;
+		}
+
+		&:hover .pagination__hidden-link{
+			color: #fff;
+		}
 	}
 
+	&__hidden-link{
+		color: $colorPrimary;
+		letter-spacing: 2.5px;
+		text-decoration: none;
+		transition: all .3s ease-in-out;
+	}
 }
