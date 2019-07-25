@@ -2,9 +2,9 @@
 	margin-top: 37px;
 
 	&__title{
-		font-size: 35px;
+		font-size: 34px;
 		text-transform: capitalize;
-		margin-bottom: 24px;
+		margin-bottom: 49px;
 
 		@media only screen and (max-width: 1170px){
 			font-size: 33px;
@@ -17,14 +17,10 @@
 
 	&__item{
 		display: block;
-		width: 68%;	
-		text-decoration: none;
-		border-bottom: 1px solid $textColorSecondary;
-		padding: 26px 0;
-
-		&:hover .article-list__banner-img{
-			opacity: .8;
-		}
+		width: 68%;
+		margin: 26px 0;
+		border-bottom: 1px solid $postUnderline;
+		padding-bottom: 26px;
 
 		&:last-child{
 			border-bottom: 0;
@@ -40,18 +36,23 @@
 		}
 	}
 
+	&__content-wrapper{
+		display: flex;
+	}
+
+	&__img-link{
+	&:hover ~.article-list__txt-wrapper .article-list__item-title{
+			color: $colorPrimary;
+		}
+	}
+
 	&__banner-img{
 		background-image: image-url("bg.jpg");
 		background-size: cover;
-		height: 179px;
-		width: 275px;
-		display: inline-block;
-		border-radius: 15px;
+		height: 180px;
+		width: 276px;
+		border-radius: 10px;
 		transition: all .3s ease-in-out;
-
-		@media only screen and (max-width: 920px){
-			width: 35%;
-		}
 
 		@media only screen and (max-width: 640px){
 			height: 143px;
@@ -68,7 +69,6 @@
 		width: 62%;
 		display: inline-block;
 		vertical-align: top;
-		margin-left: 15px;
 
 		@media only screen and (max-width: 920px){
 			width: 57%;
@@ -93,10 +93,21 @@
 		}
 	}
 
+	&__description-wrapper{
+		text-decoration: none;
+		display: inline-block;
+		padding-left: 15px;
+
+		&:hover .article-list__item-title{
+			color: $colorPrimary;
+		}
+	}
+
 	&__item-title{
 		font-size: 20px;
 		margin: 0;
 		color: $defaultColor;
+		transition: all .3s ease-in-out;
 
 		@media only screen and (max-width: 1170px){
 			font-size: 18px;
@@ -108,15 +119,11 @@
 	}
 
 	&__description{
+		font-size: 16px;
 		color: $textColorPrimary;
 		line-height: 1.3;
-		font-size: 18px;
-		margin-top: 5px;
+		margin-top: 10px;
 		margin-bottom: 0;
-
-		@media only screen and (max-width: 1170px){
-			font-size: 16px;
-		}
 
 		@media only screen and (max-width: 640px){
 			font-size: 14px;
@@ -125,12 +132,8 @@
 
 	&__author{
 		color: $textColorSecondary;
-		margin: 0;
-		line-height: 1.7;
-
-		@media only screen and (max-width: 1170px){
-			font-size: 14px;
-		}
+		margin: 7px 0 0;
+		font-size: 14px;
 
 		@media only screen and (max-width: 640px){
 			font-size: 12px;
@@ -142,14 +145,20 @@
 	}
 
 	&__topics{
-		margin-top: 2px;
-		margin-bottom: 0;
+		display: inline-block;
+		text-decoration: none;
+		margin-top: 6px;
+		margin-left: 15px;
 		background-color: $colorPrimary;
 		color: #fff;
 		text-transform: uppercase;
-		font-size: 13px;
-		padding: 6px 8px;
-		width: 104px;
+		font-size: 14px;
+		padding: 5px 6px;
+		transition: all .3s ease-in-out;
+
+		&:hover{
+			background-color: $hoveredMenuColor;
+		}
 
 		@media only screen and (max-width: 1170px){
 			font-size: 12px;
