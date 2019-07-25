@@ -6,12 +6,8 @@
 		text-transform: capitalize;
 		margin-bottom: 49px;
 
-		@media only screen and (max-width: 1170px){
-			font-size: 33px;
-		}
-
-		@media only screen and (max-width: 640px){
-			font-size: 31px;
+		@media only screen and (max-width: 768px){
+			font-size: 30px;
 		}
 	}
 
@@ -28,7 +24,7 @@
 		}
 
 		@media only screen and (max-width: 1170px){
-			width: 90%;
+			width: 75%;
 		}
 
 		@media only screen and (max-width: 920px){
@@ -38,6 +34,10 @@
 
 	&__content-wrapper{
 		display: flex;
+
+		@media only screen and (max-width: 480px){
+			display: block;
+		}
 	}
 
 	&__img-link{
@@ -49,46 +49,29 @@
 	&__banner-img{
 		background-image: image-url("bg.jpg");
 		background-size: cover;
+		background-position: center;
 		height: 180px;
 		width: 276px;
 		border-radius: 10px;
 		transition: all .3s ease-in-out;
 
-		@media only screen and (max-width: 640px){
-			height: 143px;
+		@media only screen and (max-width: 768px){
+			width: 246px;
+		}
+
+		@media only screen and (max-width: 576px){
+			width: 206px;
 		}
 
 		@media only screen and (max-width: 480px){
-			display: block;
 			width: 100%;
-			height: 171px;
 		}
 	}
 
 	&__txt-wrapper{
 		width: 62%;
-		display: inline-block;
-		vertical-align: top;
-
-		@media only screen and (max-width: 920px){
-			width: 57%;
-		}
-
-		@media only screen and (max-width: 500px){
-			width: 60%;
-			margin-left: 5px;
-		}	
 
 		@media only screen and (max-width: 480px){
-			width: 69%;
-			margin-left: 0;
-		}
-
-		@media only screen and (max-width: 420px){
-			width: 79%;
-		}
-
-		@media only screen and (max-width: 375px){
 			width: 100%;
 		}
 	}
@@ -101,6 +84,12 @@
 		&:hover .article-list__item-title{
 			color: $colorPrimary;
 		}
+
+		@media only screen and (max-width: 480px){
+			padding-left: 0;
+			padding-top: 15px;
+
+		}
 	}
 
 	&__item-title{
@@ -109,12 +98,12 @@
 		color: $defaultColor;
 		transition: all .3s ease-in-out;
 
-		@media only screen and (max-width: 1170px){
-			font-size: 18px;
-		}
-
-		@media only screen and (max-width: 640px){
-			font-size: 16px;
+		@media only screen and (max-width: 768px){
+			@include excerpt(
+	            $font-size: 18px,
+	            $lines-to-show: 2,
+	            $excerpt-bg: transparent
+        	);
 		}
 	}
 
@@ -125,8 +114,12 @@
 		margin-top: 10px;
 		margin-bottom: 0;
 
-		@media only screen and (max-width: 640px){
-			font-size: 14px;
+		@media only screen and (max-width: 768px){
+			@include excerpt(
+	            $font-size: 16px,
+	            $lines-to-show: 3,
+	            $excerpt-bg: transparent
+        	);
 		}
 	}
 
@@ -135,7 +128,7 @@
 		margin: 7px 0 0;
 		font-size: 14px;
 
-		@media only screen and (max-width: 640px){
+		@media only screen and (max-width: 768px){
 			font-size: 12px;
 		}
 	}
@@ -160,12 +153,12 @@
 			background-color: $hoveredMenuColor;
 		}
 
-		@media only screen and (max-width: 1170px){
+		@media only screen and (max-width: 768px){
 			font-size: 12px;
 		}
 
-		@media only screen and (max-width: 640px){
-			font-size: 10px;
+		@media only screen and (max-width: 480px){
+			margin-left: 0;
 		}
 	}
 }
