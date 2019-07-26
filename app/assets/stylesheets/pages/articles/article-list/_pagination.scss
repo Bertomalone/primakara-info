@@ -9,15 +9,11 @@
 
 	&__list-page{
 		display: inline-block;
-		margin-right: 10.2px;
+		margin-right: 10px;
 
 		&:hover .pagination__list-link{
 			background-color: $colorPrimary;
 			color: #fff;
-		}
-
-		&:first-child{
-			margin-left: 0;
 		}
 	}
 
@@ -30,10 +26,6 @@
 		transition: all .3s ease-in-out;
 	}
 
-	&--first-page{
-		padding: 2px 13px;
-	}
-
 	&--list-active{
 		background-color: $colorPrimary;
 		color: #fff;
@@ -41,6 +33,8 @@
 
 	&__list-hidden{
 		display: inline-block;
+		color: $colorPrimary;
+		letter-spacing: 2.5px;
 		height: 31.5px;
 		line-height: 20px;
 		position: absolute;
@@ -52,17 +46,7 @@
 
     	&:hover {
 			background-color: $colorPrimary;
-		}
-
-		&:hover .pagination__hidden-link{
 			color: #fff;
 		}
-	}
-
-	&__hidden-link{
-		color: $colorPrimary;
-		letter-spacing: 2.5px;
-		text-decoration: none;
-		transition: all .3s ease-in-out;
 	}
 }
