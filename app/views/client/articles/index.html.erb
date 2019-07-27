@@ -1,1 +1,7 @@
-<%= render 'client/articles/article-list' %>
+<%= render 'client/articles/article-list/article-list-category' %>
+<%= render 'client/articles/article-list/article-list' %>
+<%= render 'client/articles/article-list/pagination' %>
+
+<%= content_for :script do %>
+  <%= javascript_pack_tag 'article-list', defer: true %>
+<% end %>
