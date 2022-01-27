@@ -15,7 +15,7 @@ gem 'sassc-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'redis-rails', '~> 5.0'
-gem 'sidekiq', '~> 5.2'
+gem 'sidekiq', '~> 6.4'
 
 group :development, :test do
  gem 'pry-rails'
